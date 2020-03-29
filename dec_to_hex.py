@@ -13,11 +13,13 @@ def smooth_list():
     for num in numlist:
         num = find_and_delete_decimals(num)
         new_numlist.append(int(num))
+    print(new_numlist)
 
 def create_al():
     al.append(input_number%16)
     for number in new_numlist:
         al.append(number%16)
+    print(al)
 
 def create_al_2():
     for n, i in enumerate(al):
@@ -33,6 +35,7 @@ def create_al_2():
             al[n] = 'e'
         if i == 15:
             al[n] = 'f'
+
 
 def create_answer():
     for n, i in enumerate(al):
