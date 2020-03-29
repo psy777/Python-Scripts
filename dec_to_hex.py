@@ -54,6 +54,3 @@ def dec_to_hex():
     create_answer()
 
 dec_to_hex()
-
-git config --global user.email "you@example.com"
-git config --global user.name "Your Name"
