@@ -36,7 +36,6 @@ def create_al_2():
         if i == 15:
             al[n] = 'f'
 
-
 def create_answer():
     for n, i in enumerate(al):
         al[n] = str(al[n])
