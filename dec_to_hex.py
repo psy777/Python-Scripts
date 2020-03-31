@@ -13,13 +13,11 @@ def smooth_list():
     for num in numlist:
         num = find_and_delete_decimals(num)
         new_numlist.append(int(num))
-    print(new_numlist)
 
 def create_al():
     al.append(input_number%16)
     for number in new_numlist:
         al.append(number%16)
-    print(al)
 
 def create_al_2():
     for n, i in enumerate(al):
@@ -40,7 +38,7 @@ def create_answer():
     for n, i in enumerate(al):
         al[n] = str(al[n])
     str1 = ''
-    print(str1.join(al[::-1]))
+    print(f'The hexidemal value is {str1.join(al[::-1])}')
 
 def find_and_delete_decimals(string):
     sep = '.'
